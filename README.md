@@ -29,7 +29,7 @@
 
 1. Clone or download this repository:
    ```bash
-   git clone https://github.com/TechiError/yt-shorts-autoscroll.git
+   git clone https://github.com/TechiError/youtube-shorts-autoscroll.git
    ```
 
 2. Open Chrome and navigate to:
