@@ -23,16 +23,6 @@
 
 ---
 
-## Screenshots
-
-> Floating overlay appears on the right side of every YouTube Short.
-
-| Popup | In-page overlay |
-|---|---|
-| Dark-themed settings popup | Live progress ring + toggle + skip |
-
----
-
 ## Installation
 
 ### From source (Developer Mode)
@@ -132,6 +122,9 @@ yt-shorts-autoscroll/
 No data is collected or transmitted externally.
 
 ---
+
+## Credits
+Thanks to my friend [@Krypticvoid0507](https://github.com/Krypticvoid0507) for idea.
 
 ## Contributing
 
