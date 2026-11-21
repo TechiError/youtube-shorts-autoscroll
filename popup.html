@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YT Shorts Auto Scroller</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <img src="icons/icon48.png" width="22" height="22" style="border-radius: 5px;" alt="Logo" />
+        <span>Shorts Auto Scroller</span>
+      </div>
+      <div id="status-badge" class="badge badge--off">OFF</div>
+    </header>
+
+    <!-- Warning when not on Shorts -->
+    <div id="not-on-shorts" class="warning hidden">
+      <span>⚠️</span>
+      <span>Navigate to a YouTube Short first.</span>
+    </div>
+
+    <!-- Main toggle -->
+    <div class="card toggle-card">
+      <span class="label">Auto Scroll</span>
+      <label class="switch">
+        <input type="checkbox" id="toggle-enabled" />
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <!-- Settings -->
+    <div class="card settings-card" id="settings-panel">
+      <div class="setting-row">
+        <label for="interval-slider">
+          Scroll every
+          <strong><span id="interval-display">15s</span></strong>
+        </label>
+        <input
+          type="range"
+          id="interval-slider"
+          min="0"
+          max="60"
+          step="1"
+          value="15"
+        />
+        <div class="tick-labels">
+          <span>Instant</span><span>30s</span><span>60s</span>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="setting-row toggle-row">
+        <label for="skip-ads">Skip while ad plays</label>
+        <label class="switch switch--sm">
+          <input type="checkbox" id="skip-ads" checked />
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="setting-row toggle-row">
+        <label for="scroll-on-end">Scroll when video ends</label>
+        <label class="switch switch--sm">
+          <input type="checkbox" id="scroll-on-end" checked />
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
+
+    <!-- Manual control -->
+    <button id="btn-next" class="btn btn--outline">⏭ Next Short</button>
+
+    <footer>Settings saved automatically</footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
